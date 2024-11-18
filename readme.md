@@ -16,3 +16,65 @@ These notes are made for myself so I don't forget what I did when I look back at
 - Initialize node `npm init`
    - follow steps (defaults are fine)
 - Install express `npm install express`
+
+
+# End Points Documentation
+- The base url for the api is: http://localhost:3000/api/
+
+## EndPoints:
+
+## GetAllTimesOfDay
+- URL: http://localhost:3000/api/GetAllTimesOfDay
+
+### Expected Response:
+{
+    "message": "success",
+    "data": [
+        {
+            "timeOfDay": "afternoon"
+        },
+        {
+            "timeOfDay": "evening"
+        },
+        {
+            "timeOfDay": "morning"
+        }
+    ]
+}
+
+## GetSupportedLanguages
+- URL: http://localhost:3000/api/GetSupportedLanguages
+
+### Expected Response:
+{
+    "message": "success",
+    "data": [
+        {
+            "language": "english"
+        },
+        {
+            "language": "french"
+        },
+        {
+            "language": "spanish"
+        }
+    ]
+}
+
+## greet
+- URL: http://localhost:3000/api/greet
+
+### Example Input:
+{
+    "timeOfDay" : "Morning",
+    "language" : "english",
+    "tone" : "casual"
+}
+
+### Example Response:
+{
+    "message": "success",
+    "data": {
+        "greetingMessage": "morning"
+    }
+}
