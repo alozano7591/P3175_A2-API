@@ -21,8 +21,6 @@ These notes are made for myself so I don't forget what I did when I look back at
 # End Points Documentation
 - The base url for the api is: http://localhost:3000/api/
 
-## EndPoints:
-
 ## GetAllTimesOfDay
 - URL: http://localhost:3000/api/GetAllTimesOfDay
 
