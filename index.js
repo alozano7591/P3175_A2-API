@@ -1,5 +1,7 @@
-/*
-* Alfredo Lozano
+/** 
+* By: Alfredo Lozano
+* Assignment 2
+* Distributed Applications
 */
 
 const express = require('express');
@@ -80,7 +82,7 @@ let db;
 })();
 
 // Get a greeting
-app.get('/api/greet', async (req, res) => {
+app.post('/api/greet', async (req, res) => {
   const { timeOfDay, language, tone } = req.body;
 
   if (!timeOfDay || !language || !tone) {
@@ -136,6 +138,16 @@ app.get('/api/GetSupportedLanguages', async (req, res) => {
       res.status(500).json({ error: error.message });
     }
   });
+
+  // GET all supported languages
+app.get('/api/GetAllTones', async (req, res) => {
+  try {
+    const tones = await db.all('SELECT DISTINCT tone FROM greetings');
+    res.json({ message: 'success', data: tones });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 
 // POST a new greeting. I know this isn't required but added it for my own testing and curiosity
