@@ -20,11 +20,14 @@ These notes are made for myself so I don't forget what I did when I look back at
 - ensure that node version is compatible with this version (v22.11.0)
 - check that npm installed `npm --version`
 
-## Initialize project
+## Initialize a new project
 - Initialize node `npm init`
    - follow steps (defaults are fine)
 - Install express `npm install express`
 
+## Running this project for first time
+- install modules: `npm install`
+- run: `node index.js`
 
 # End Points Documentation
 - The base url for the api is: http://localhost:3000/api/
