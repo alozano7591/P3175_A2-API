@@ -4,12 +4,20 @@
 This is the initial project setup for assignment 2 of this course.
 The project goes over converting ASP.NET Core 8 API to Node.js with Express and SQLite Integration.
 
+# Git Hub Repo links:
+A2 API (This project) 
+   https://github.com/alozano7591/P3175_A2-git.git
+
+A2 Client (Saved to its own repo)
+   https://github.com/alozano7591/P1375_A2-Client.git
+
 # Some pointers on getting a basic node api
 These notes are made for myself so I don't forget what I did when I look back at this project later.
 
 ## Setup and checks
 - Ensure that terminal is cmd and not powershell
 - check that node installed `node --version`
+- ensure that node version is compatible with this version (v22.11.0)
 - check that npm installed `npm --version`
 
 ## Initialize project
