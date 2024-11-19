@@ -6,7 +6,7 @@ The project goes over converting ASP.NET Core 8 API to Node.js with Express and 
 
 # Git Hub Repo links:
 A2 API (This project) 
-   https://github.com/alozano7591/P3175_A2-git.git
+   https://github.com/alozano7591/P3175_A2-API.git
 
 A2 Client (Saved to its own repo)
    https://github.com/alozano7591/P1375_A2-Client.git
